@@ -11,26 +11,19 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .wrap{width:min(600px,92%);margin:auto}
 header{background:#FFFFFF;border-bottom:2px solid #BFE6FF;position:sticky;top:0;z-index:20;padding:14px 0}
 .top{display:flex;justify-content:space-between;align-items:center}
-.logo{font-size:22px;font-weight:900;letter-spacing:1px;color:#111;user-select:none}
+.logo{font-size:22px;font-weight:900;letter-spacing:1px;color:#111}
 .hero{background:linear-gradient(135deg,#00A8E8,#7ED6FF);border-radius:8px;padding:22px;margin:14px 0;box-shadow:0 6px 0 #0090C8;border:2px solid #00A8E8}
-.hero h1{font-size:32px;margin:0;line-height:1.1;color:#fff;text-shadow:0 2px 0 rgba(0,0,0,.15)}
+.hero h1{font-size:32px;margin:0;line-height:1.1;color:#fff}
 .hero p{color:#fff;margin:8px 0 0;font-weight:700}
-.btn{border:0;border-radius:8px;padding:13px 20px;font-weight:900;box-shadow:0 5px 0 rgba(0,0,0,.15);transition:all .08s;position:relative}
+.btn{border:0;border-radius:8px;padding:13px 20px;font-weight:900;box-shadow:0 5px 0 rgba(0,0,0,.15);transition:all .08s}
 .btn:active{transform:translateY(4px);box-shadow:0 1px 0 rgba(0,0,0,.15)}
 .btn-pink{background:#FE2C55;color:#fff;box-shadow:0 5px 0 #A50024}
-.btn-pink:active{box-shadow:0 1px 0 #A50024}
 .btn-white{background:#fff;color:#000;box-shadow:0 5px 0 #9ED6F2;border:2px solid #fff}
-.btn-white:active{box-shadow:0 1px 0 #9ED6F2}
 .btn-dark{background:#111;color:#fff;box-shadow:0 5px 0 #000}
-.btn-dark:active{box-shadow:0 1px 0 #000}
 .btn-green{background:#00E676;color:#000;box-shadow:0 5px 0 #00A84D}
-.btn-green:active{box-shadow:0 1px 0 #00A84D}
 .btn-red{background:#FE2C55;color:#fff;box-shadow:0 5px 0 #A50024}
-.btn-red:active{box-shadow:0 1px 0 #A50024}
 .btn-cyan{background:#25F4EE;color:#000;box-shadow:0 5px 0 #00B5B5}
-.btn-cyan:active{box-shadow:0 1px 0 #00B5B5}
 .btn-gray{background:#F0F0F0;color:#111;box-shadow:0 5px 0 #CFCFCF;border:1px solid #DDD}
-.btn-gray:active{box-shadow:0 1px 0 #CFCFCF}
 .btn.full{width:100%;padding:15px;font-size:16px}
 .bottomNav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:2px solid #BFE6FF;display:flex;padding:8px 6px;gap:4px}
 .bottomNav button{flex:1;border:0;background:#F0F8FF;padding:8px 2px;color:#888;font-size:11px;font-weight:800;display:flex;flex-direction:column;gap:2px;align-items:center;border-radius:8px;box-shadow:0 4px 0 #BFE6FF}
@@ -39,7 +32,7 @@ header{background:#FFFFFF;border-bottom:2px solid #BFE6FF;position:sticky;top:0;
 .section{padding:18px 0 0}h2{font-size:20px;margin:0 0 12px;color:#111}
 .card{background:#fff;border:2px solid #BFE6FF;border-radius:8px;padding:16px;margin-bottom:12px;box-shadow:0 4px 0 #BFE6FF}
 .field{margin-bottom:12px}label{display:block;font-weight:700;font-size:13px;margin-bottom:5px;color:#111}
-input,select,textarea{width:100%;padding:12px;border:2px solid #BFE6FF;border-radius:8px;background:#fff;color:#111;outline:none;box-shadow:inset 0 2px 0 #F0F8FF}
+input,select,textarea{width:100%;padding:12px;border:2px solid #BFE6FF;border-radius:8px;background:#fff;color:#111;outline:none}
 input:focus,select:focus,textarea:focus{border-color:#00A8E8}
 select option{background:#fff;color:#111}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}.small{font-size:12px;color:#888}
@@ -54,15 +47,19 @@ select option{background:#fff;color:#111}
 .track{border:2px solid #00A8E8;border-radius:8px;padding:14px;background:#E8F7FF}
 .track-steps{display:flex;gap:5px;margin:12px 0;flex-wrap:wrap}.track-steps div{flex:1;min-width:60px;text-align:center;font-size:11px;font-weight:700;padding:9px 3px;border-radius:6px;background:#F0F0F0;color:#888;box-shadow:0 3px 0 #DDD}.track-steps div.done{background:#00A8E8;color:#fff}.track-steps div.now{background:#25F4EE;color:#000}
 .page{display:none}.page.show{display:block}
-.driver-row{display:flex;justify-content:space-between;align-items:center;padding:12px;border-radius:8px;background:#F0F8FF;border:2px solid #BFE6FF;margin:8px 0;box-shadow:0 3px 0 #BFE6FF}
-.toast{position:fixed;bottom:90px;left:50%;transform:translate(-50%,80px);background:#111;color:#fff;padding:12px 18px;border-radius:8px;transition:.3s;z-index:60;font-weight:800;box-shadow:0 5px 0 #000}.toast.show{transform:translate(-50%,0)}
+.toast{position:fixed;bottom:90px;left:50%;transform:translate(-50%,80px);background:#111;color:#fff;padding:12px 18px;border-radius:8px;transition:.3s;z-index:60;font-weight:800}.toast.show{transform:translate(-50%,0)}
+/* ПАРОЛЬ ТЕРЕЗЕСІ */
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.modal.show{display:flex}
+.modal-box{background:#fff;width:100%;max-width:360px;border-radius:12px;padding:20px;box-shadow:0 10px 0 #0090C8}
+.driver-link{text-align:center;color:#BFE6FF;font-size:11px;padding:10px;cursor:pointer;user-select:none}
+.driver-link:active{color:#00A8E8}
 </style>
 </head>
 <body>
-<header><div class="wrap"><div class="top"><div class="logo" id="logoTap">AK⚪ZHOL TAXI</div><div style="font-size:12px;color:#888">🟢 <span id="onlineInfo">Такси қызметі</span></div></div></div></header>
-<div class="wrap"><div class="hero"><h1>AK⚪ZHOL TAXI</h1><p>Жолың ашық болсын!</p><div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn btn-white" onclick="go('booking')">🚕 Шақыру</button><button class="btn btn-dark" style="background:#fff;color:#000;box-shadow:0 5px 0 #0090C8" onclick="go('track')">📍 Бақылау</button></div></div></div>
+<header><div class="wrap"><div class="top"><div class="logo">AK⚪ZHOL TAXI</div><div style="font-size:12px;color:#888">🟢 <span id="onlineInfo">Такси қызметі</span></div></div></div></header>
+<div class="wrap"><div class="hero"><h1>AK⚪ZHOL TAXI</h1><p>Жолың ашық болсын!</p><div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><button class="btn btn-white" onclick="go('booking')">🚕 Шақыру</button><button class="btn btn-dark" style="background:#fff;color:#000" onclick="go('track')">📍 Бақылау</button></div></div></div>
 
-<!-- БАСТЫ — ЖОЛАУШЫҒА ТЕК АҚПАРАТ, ЖҮРГІЗУШІГЕ СТАТИСТИКА -->
 <div id="page-home" class="page show"><section class="section wrap">
 <div id="driverHomeStats" style="display:none">
 <h2>Бүгін</h2><div class="statgrid"><div class="stat"><strong id="hTotal">0</strong><small>Барлығы</small></div><div class="stat"><strong id="hActive">0</strong><small>Белсенді</small></div><div class="stat"><strong id="hDone">0</strong><small>Жеткізілді</small></div><div class="stat"><strong id="hMoney">0 ₸</strong><small>Табыс</small></div></div>
@@ -85,23 +82,29 @@ select option{background:#fff;color:#111}
 <div class="field"><label>Төлем</label><select id="payment"><option>Қолма-қол</option><option>Kaspi</option></select></div></div>
 <div class="field"><label>Баға (₸)</label><input id="fare" type="number" min="0" placeholder="0"></div>
 <div class="field"><label>Телефон</label><input id="phone" type="tel" placeholder="+7 7XX XXX XX XX" required></div>
-<div class="field"><label>Ескерту</label><textarea id="comment" rows="2" placeholder=""></textarea></div>
+<div class="field"><label>Ескерту</label><textarea id="comment" rows="2"></textarea></div>
 <button class="btn btn-pink full" type="submit">Тапсырыс беру →</button>
 </form></div>
 <div class="card"><b>📞 Диспетчер: <span id="dispPhoneText"></span></b><div style="display:flex;gap:10px;margin-top:10px"><button class="btn btn-dark" style="flex:1" onclick="callDriver(DISPATCHER)">📞 Қоңырау</button><button class="btn btn-green" style="flex:1" onclick="openWa(DISPATCHER,'Сәлеметсіз бе! Такси керек')">📲 WhatsApp</button></div></div></section></div>
+
 <div id="page-track" class="page"><section class="section wrap"><h2>📍 Бақылау</h2>
 <div class="card"><div class="field"><label>Нөмір</label><input id="trackInput" placeholder="123456"></div><button class="btn btn-pink full" onclick="trackOrder()">Табу</button><div id="trackResult" style="margin-top:12px"></div></div>
 <div class="card"><h3 style="margin:0 0 8px">Соңғы</h3><div id="myOrders"></div></div></section></div>
+
 <div id="page-driver" class="page"><section class="section wrap"><h2>🚘 Жүргізуші</h2>
 <div class="card"><div class="row"><div class="field"><label>Жүргізуші</label><select id="driverSelect"><option value="Ақжол">Ақжол</option><option value="Ержан">Ержан</option><option value="Серікқан">Серікқан</option></select></div>
 <div class="field"><label>Күйі</label><select id="driverStatus"><option value="online">🟢 Желіде</option><option value="offline">⚪ Желіде емес</option></select></div></div><button class="btn btn-red full" onclick="logoutDriver()">🔒 Жүргізушіден шығу</button></div>
 <div class="statgrid"><div class="stat"><strong id="driverTotal">0</strong><small>Барлығы</small></div><div class="stat"><strong id="driverActive">0</strong><small>Белсенді</small></div><div class="stat"><strong id="driverDone">0</strong><small>Жеткізілді</small></div><div class="stat"><strong id="driverMoney">0 ₸</strong><small>Табыс</small></div></div>
 <div class="tabs"><button class="active" data-filter="all">Барлығы</button><button data-filter="new">Жаңа</button><button data-filter="mine">Менікі</button><button data-filter="done">Жеткізілді</button></div>
 <div id="driverOrders"></div></section></div>
+
 <div id="page-admin" class="page"><section class="section wrap"><h2>📋 Барлығы</h2>
 <div class="card"><div class="field"><label>Іздеу</label><input id="searchInput" placeholder="Атбасар, +7707" oninput="render()"></div><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-green" onclick="exportOrders()">📤 Көшіру</button><button class="btn btn-red" onclick="clearDone()">🗑 Тазалау</button></div></div>
 <div class="statgrid"><div class="stat"><strong id="allTotal">0</strong><small>Барлығы</small></div><div class="stat"><strong id="allActive">0</strong><small>Белсенді</small></div><div class="stat"><strong id="allDone">0</strong><small>Жеткізілді</small></div><div class="stat"><strong id="allMoney">0 ₸</strong><small>Табыс</small></div></div>
 <div id="allOrders"></div></section></div>
+
+<div class="wrap"><div class="driver-link" id="driverLink">Жүргізуші кіру •</div></div>
+
 <div class="bottomNav">
 <button class="active" data-nav="home" onclick="go('home',this)"><i>🏠</i>Басты</button>
 <button data-nav="booking" onclick="go('booking',this)"><i>🚕</i>Шақыру</button>
@@ -109,42 +112,76 @@ select option{background:#fff;color:#111}
 <button id="driverNavBtn" data-nav="driver" onclick="go('driver',this)" style="display:none"><i>🚘</i>Жүргізуші</button>
 <button id="adminNavBtn" data-nav="admin" onclick="go('admin',this)" style="display:none"><i>📋</i>Барлығы</button>
 </div>
+
+<!-- ПАРОЛЬ ТЕРЕЗЕСІ -->
+<div class="modal" id="passModal"><div class="modal-box">
+<h3 style="margin:0 0 12px">🚘 Жүргізуші кіру</h3>
+<div class="field"><label>Пароль</label><input id="passInput" type="password" inputmode="numeric" placeholder="Парольді енгізіңіз" autocomplete="off"></div>
+<div style="color:#E00;font-size:13px;display:none" id="passError">❌ Пароль қате!</div>
+<button class="btn btn-pink full" onclick="checkPass()">Кіру →</button>
+<button class="btn btn-gray full" style="margin-top:8px" onclick="closePass()">Жабу</button>
+</div></div>
+
 <div class="toast" id="toast"></div>
 <script>
-const KEY='akzhol_taxi_final';
-const $=id=>document.getElementById(id);
-const DRIVERS={ "Ақжол":"77470683267", "Ержан":"77082418836", "Серікқан":"77056623133" };
-const DISPATCHER="77082418836";
-const DISPLAY_PHONE="+7 708 241 88 36";
-const DRIVER_PASS="1234"; // <-- Пароль осында, қаласаң ауыстырамыз
-let filter='all';
-function isDriverMode(){ return localStorage.getItem('akzhol_driver_mode')==='1'; }
+var KEY='akzhol_taxi_final';
+function $(id){return document.getElementById(id)}
+var DRIVERS={ "Ақжол":"77470683267", "Ержан":"77082418836", "Серікқан":"77056623133" };
+var DISPATCHER="77082418836";
+var DISPLAY_PHONE="+7 708 241 88 36";
+var DRIVER_PASS="1234";
+var filter='all';
+
+function isDriverMode(){ try{return localStorage.getItem('akzhol_driver_mode')==='1'}catch(e){return false} }
 function updateDriverUI(){
-  const on=isDriverMode();
+  var on=isDriverMode();
   $('driverNavBtn').style.display = on ? 'flex' : 'none';
   $('adminNavBtn').style.display = on ? 'flex' : 'none';
   $('driverHomeStats').style.display = on ? 'block' : 'none';
   $('passengerHome').style.display = on ? 'none' : 'block';
   $('onlineInfo').textContent = on ? '🚘 Жүргізуші режимі' : 'Такси қызметі';
+  $('driverLink').style.display = on ? 'none' : 'block';
 }
-function logoutDriver(){ localStorage.removeItem('akzhol_driver_mode'); updateDriverUI(); go('home'); toast('Жүргізушіден шықтыңыз'); }
-let logoTaps=0, logoTimer=null;
-$('logoTap').addEventListener('click',()=>{ logoTaps++; clearTimeout(logoTimer); logoTimer=setTimeout(()=>logoTaps=0,2000); if(logoTaps>=5){ logoTaps=0; if(isDriverMode()){ logoutDriver(); } else { const p=prompt('🚘 Жүргізуші паролі:'); if(p===null) return; if(p===DRIVER_PASS){ localStorage.setItem('akzhol_driver_mode','1'); updateDriverUI(); toast('🚘 Қош келдіңіз, жүргізуші!'); go('driver'); } else { toast('❌ Пароль қате!'); } } } });
+function openPass(){ $('passError').style.display='none'; $('passInput').value=''; $('passModal').classList.add('show'); setTimeout(function(){ $('passInput').focus(); },100); }
+function closePass(){ $('passModal').classList.remove('show'); }
+function checkPass(){
+  var v=$('passInput').value.trim();
+  if(v===DRIVER_PASS){
+    try{localStorage.setItem('akzhol_driver_mode','1')}catch(e){}
+    closePass(); updateDriverUI(); toast('🚘 Қош келдіңіз!'); go('driver');
+  } else {
+    $('passError').style.display='block';
+    $('passInput').value=''; $('passInput').focus();
+  }
+}
+function logoutDriver(){ try{localStorage.removeItem('akzhol_driver_mode')}catch(e){} updateDriverUI(); go('home'); toast('Жүргізушіден шықтыңыз'); }
+
+$('driverLink').addEventListener('click', openPass);
+$('passInput').addEventListener('keydown', function(e){ if(e.key==='Enter'){ checkPass(); } });
+$('passModal').addEventListener('click', function(e){ if(e.target===$('passModal')) closePass(); });
+
 function getOrders(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return[]}}
 function saveOrders(d){localStorage.setItem(KEY,JSON.stringify(d))}
-function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function money(v){return Number(v||0).toLocaleString('kk-KZ')+' ₸'}
-function toast(m){const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(()=>t.classList.remove('show'),2500)}
+function toast(m){var t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(function(){t.classList.remove('show')},2500)}
 function statusClass(s){if(s==='Жеткіздім')return 'green';if(s==='Жаңа')return 'orange';if(s==='Бас тартылды')return 'red';return 'blue'}
 function callDriver(p){window.location.href="tel:+"+p}
 function openWa(p,msg){window.open("https://wa.me/"+p+"?text="+encodeURIComponent(msg||"Сәлеметсіз бе!"),"_blank")}
-function go(name,btn){ if((name==='driver'||name==='admin') && !isDriverMode()){ toast('Тек жүргізушіге арналған'); return; } document.querySelectorAll('.page').forEach(p=>p.classList.remove('show'));document.getElementById('page-'+name).classList.add('show');document.querySelectorAll('.bottomNav button').forEach(b=>b.classList.toggle('active',b.dataset.nav===name));window.scrollTo({top:0});render()}
+function go(name,btn){ if((name==='driver'||name==='admin') && !isDriverMode()){ openPass(); return; } document.querySelectorAll('.page').forEach(function(p){p.classList.remove('show')}); document.getElementById('page-'+name).classList.add('show'); document.querySelectorAll('.bottomNav button').forEach(function(b){b.classList.toggle('active',b.dataset.nav===name)}); window.scrollTo({top:0}); render()}
 function buildWa(o){return 'AK⚪ZHOL TAXI — №'+o.id.slice(-6)+'\n'+o.from+' → '+o.to+'\n'+o.date+' '+o.time+'\n'+o.passengers+' адам • '+o.tariff+'\n'+o.payment+'\n'+money(o.fare)+'\n'+o.phone+'\n'+(o.comment||'')+'\n'+o.status}
-function trackOrder(){const q=$('trackInput').value.trim();if(!q){toast('Нөмірді енгізіңіз');return}const o=getOrders().find(x=>x.id.endsWith(q)||x.id===q);const box=$('trackResult');if(!o){box.innerHTML='<div class="empty">Табылмады</div>';return}const stages=['Қабылданды','Жолға шықтым','Келдім','Алып кеттім','Жеткіздім'];let idx=stages.indexOf(o.status);if(o.status==='Жаңа')idx=-1;let steps=stages.map((s,i)=>{let cls='';if(idx>=i)cls='done';else if(idx+1===i)cls='now';return '<div class="'+cls+'">'+s+'</div>'}).join('');box.innerHTML='<div class="track"><div style="display:flex;justify-content:space-between"><strong>№'+o.id.slice(-6)+'</strong><span class="badge '+statusClass(o.status)+'">'+o.status+'</span></div><div class="route">'+esc(o.from)+' → '+esc(o.to)+'</div><div class="meta">🚘 '+(o.driver?'Жүргізуші тағайындалды':'Жүргізуші ізделуде')+'<br>💰 '+money(o.fare)+' • '+o.date+' '+o.time+'</div><div class="track-steps">'+steps+'</div><div class="actions"><button class="btn btn-pink" onclick="callDriver(DISPATCHER)">📞 Диспетчерге қоңырау</button></div></div>'}
-function orderHTML(o,driver,admin=false){const assigned=o.driver===driver;let b='';if(!o.driver){b+='<button class="btn btn-pink" data-action="accept" data-id="'+o.id+'">✅ Қабылдау</button>';}else if(assigned&&o.status!=='Жеткіздім'&&o.status!=='Бас тартылды'){const st=['Қабылданды','Жолға шықтым','Келдім','Алып кеттім','Жеткіздім'];const idx=st.indexOf(o.status);if(idx>=0&&idx<4)b+='<button class="btn btn-cyan" data-action="next" data-id="'+o.id+'">➡️ '+st[idx+1]+'</button>';b+='<button class="btn btn-red" data-action="cancel" data-id="'+o.id+'">❌ Бас тарту</button>';b+='<button class="btn btn-gray" onclick="callDriver(\''+o.phone.replace(/\D/g,'')+'\')">📞 Клиент</button>';}b+='<button class="btn btn-gray" data-action="copy" data-id="'+o.id+'">📋 Көшіру</button>';b+='<button class="btn btn-green" data-action="wa" data-id="'+o.id+'">📲 WhatsApp</button>';if(admin)b+='<button class="btn btn-red" data-action="delete" data-id="'+o.id+'">🗑 Өшіру</button>';return '<div class="order"><div class="orderhead"><strong>№ '+esc(o.id.slice(-6))+'</strong><span class="badge '+statusClass(o.status)+'">'+esc(o.status)+'</span></div><div class="route">'+esc(o.from)+' → '+esc(o.to)+'</div><div class="meta">'+esc(o.date)+' '+esc(o.time)+' • '+esc(o.passengers)+' адам • '+esc(o.tariff)+'<br>📞 '+esc(o.phone)+' • '+esc(o.payment)+'<br>💰 '+money(o.fare)+' • 🚘 '+esc(o.driver||'-')+'<br>'+esc(o.comment||'')+'</div><div class="actions">'+b+'</div></div>'}
+function trackOrder(){var q=$('trackInput').value.trim();if(!q){toast('Нөмірді енгізіңіз');return}var o=getOrders().find(function(x){return x.id.endsWith(q)||x.id===q});var box=$('trackResult');if(!o){box.innerHTML='<div class="empty">Табылмады</div>';return}var stages=['Қабылданды','Жолға шықтым','Келдім','Алып кеттім','Жеткіздім'];var idx=stages.indexOf(o.status);if(o.status==='Жаңа')idx=-1;var steps=stages.map(function(s,i){var cls='';if(idx>=i)cls='done';else if(idx+1===i)cls='now';return '<div class="'+cls+'">'+s+'</div>'}).join('');box.innerHTML='<div class="track"><div style="display:flex;justify-content:space-between"><strong>№'+o.id.slice(-6)+'</strong><span class="badge '+statusClass(o.status)+'">'+o.status+'</span></div><div class="route">'+esc(o.from)+' → '+esc(o.to)+'</div><div class="meta">🚘 '+(o.driver?'Жүргізуші тағайындалды':'Жүргізуші ізделуде')+'<br>💰 '+money(o.fare)+' • '+o.date+' '+o.time+'</div><div class="track-steps">'+steps+'</div><div class="actions"><button class="btn btn-pink" onclick="callDriver(DISPATCHER)">📞 Диспетчерге қоңырау</button></div></div>'}
+function orderHTML(o,driver,admin){var assigned=o.driver===driver;var b='';if(!o.driver){b+='<button class="btn btn-pink" data-action="accept" data-id="'+o.id+'">✅ Қабылдау</button>';}else if(assigned&&o.status!=='Жеткіздім'&&o.status!=='Бас тартылды'){var st=['Қабылданды','Жолға шықтым','Келдім','Алып кеттім','Жеткіздім'];var idx=st.indexOf(o.status);if(idx>=0&&idx<4)b+='<button class="btn btn-cyan" data-action="next" data-id="'+o.id+'">➡️ '+st[idx+1]+'</button>';b+='<button class="btn btn-red" data-action="cancel" data-id="'+o.id+'">❌ Бас тарту</button>';b+='<button class="btn btn-gray" onclick="callDriver(\''+o.phone.replace(/\D/g,'')+'\')">📞 Клиент</button>';}b+='<button class="btn btn-gray" data-action="copy" data-id="'+o.id+'">📋 Көшіру</button>';b+='<button class="btn btn-green" data-action="wa" data-id="'+o.id+'">📲 WhatsApp</button>';if(admin)b+='<button class="btn btn-red" data-action="delete" data-id="'+o.id+'">🗑 Өшіру</button>';return '<div class="order"><div class="orderhead"><strong>№ '+esc(o.id.slice(-6))+'</strong><span class="badge '+statusClass(o.status)+'">'+esc(o.status)+'</span></div><div class="route">'+esc(o.from)+' → '+esc(o.to)+'</div><div class="meta">'+esc(o.date)+' '+esc(o.time)+' • '+esc(o.passengers)+' адам • '+esc(o.tariff)+'<br>📞 '+esc(o.phone)+' • '+esc(o.payment)+'<br>💰 '+money(o.fare)+' • 🚘 '+esc(o.driver||'-')+'<br>'+esc(o.comment||'')+'</div><div class="actions">'+b+'</div></div>'}
 function orderHTMLPassenger(o){return '<div class="order"><div class="orderhead"><strong>№ '+esc(o.id.slice(-6))+'</strong><span class="badge '+statusClass(o.status)+'">'+esc(o.status)+'</span></div><div class="route">'+esc(o.from)+' → '+esc(o.to)+'</div><div class="meta">'+esc(o.date)+' '+esc(o.time)+' • '+esc(o.passengers)+' адам • '+esc(o.tariff)+'<br>💰 '+money(o.fare)+'</div><div class="actions"><button class="btn btn-gray" onclick="callDriver(DISPATCHER)">📞 Диспетчер</button></div></div>'}
-function render(){const orders=getOrders(), driver=$('driverSelect').value, q=($('searchInput')?$('searchInput').value.trim().toLowerCase():'');const done=orders.filter(o=>o.status==='Жеткіздім');const active=orders.filter(o=>o.status!=='Жеткіздім'&&o.status!=='Бас тартылды');const totalMoney=done.reduce((s,o)=>s+Number(o.fare||0),0);$('hTotal').textContent=orders.length;$('hActive').textContent=active.length;$('hDone').textContent=done.length;$('hMoney').textContent=money(totalMoney);$('allTotal').textContent=orders.length;$('allActive').textContent=active.length;$('allDone').textContent=done.length;$('allMoney').textContent=money(totalMoney);const mine=orders.filter(o=>o.driver===driver);const mDone=mine.filter(o=>o.status==='Жеткіздім');const mActive=mine.filter(o=>o.status!=='Жеткіздім'&&o.status!=='Бас тартылды');$('driverTotal').textContent=mine.length;$('driverActive').textContent=mActive.length;$('driverDone').textContent=mDone.length;$('driverMoney').textContent=money(mDone.reduce((s,o)=>s+Number(o.fare||0),0));$('lastOrdersHome').innerHTML=orders.length?orders.slice(-3).reverse().map(o=>'<div style="padding:8px 0;border-bottom:1px solid #BFE6FF"><b>№'+o.id.slice(-6)+'</b> '+esc(o.from)+' → '+esc(o.to)+' <span class="badge '+statusClass(o.status)+'">'+o.status+'</span></div>').join(''):'<div class="empty">Жоқ</div>';let vis=orders.filter(o=>{if(filter==='new')return !o.driver;if(filter==='mine')return o.driver===driver&&o.status!=='Жеткіздім';if(filter==='done')return o.driver===driver&&o.status==='Жеткіздім';return !o.driver||o.driver===driver});$('driverOrders').innerHTML=vis.length?vis.slice().reverse().map(o=>orderHTML(o,driver)).join(''):'<div class="empty">Жоқ</div>';$('myOrders').innerHTML=orders.length?orders.slice().reverse().slice(0,5).map(o=>orderHTMLPassenger(o)).join(''):'<div class="empty">Жоқ</div>';let all=orders.slice().reverse();if(q)all=all.filter(o=>(o.from+' '+o.to+' '+o.phone+' '+o.id).toLowerCase().includes(q));$('allOrders').innerHTML=all.length?all.map(o=>orderHTML(o,driver,true)).join(''):'<div class="empty">Жоқ</div>'}
-function exportOrders(){const o=getOrders();if(!o.length){toast('Жоқ');return}const t=o.map(x=>buildWa(x)).join('\n\n---\n\n');if(navigator.clipboard)navigator.clipboard.writeText(t).then(()=>toast('Көшірілді'))}
-function clearDone(){if(!confirm('Тазалаймыз ба?'))return;saveOrders(getOrders().filter(o=>o.status!=='Жеткіздім'));render();toast('Тазаланды')}
-$('bookingForm').addEventListener('submit',e=>{e.preventDefault();const o={id:Date.now().toString(),from:$('from').value.trim(),to:$('to').value.trim(),date:$('date').value,time:$('time').value,passengers:$('passengers').value,tariff:$('tariff').value.trim()||'Стандарт',payment:$('payment').value,phone:$('phone').value.trim(),fare:Number($('fare').value)||0,comment:$('comment').value.trim(),driver:null,status:'Жаңа',created:new Date().toISOString()};const orders=getOrders();orders.push(o);saveOrders(orders);e.target.reset();setDefaultDate();render();openWa(DISPATCHER,buildWa(o));$('trackInput').value=o.id.slice(-6);go('track');setTimeout(()=>trackOrder(),200);toast('Қабылданды! №'+o.id.slice(-6))});
-function setDefaultDate(){const n=new Date();const d=new Date
+function render(){var orders=getOrders(), driver=$('driverSelect').value, q=($('searchInput')?$('searchInput').value.trim().toLowerCase():'');var done=orders.filter(function(o){return o.status==='Жеткіздім'});var active=orders.filter(function(o){return o.status!=='Жеткіздім'&&o.status!=='Бас тартылды'});var totalMoney=done.reduce(function(s,o){return s+Number(o.fare||0)},0);$('hTotal').textContent=orders.length;$('hActive').textContent=active.length;$('hDone').textContent=done.length;$('hMoney').textContent=money(totalMoney);$('allTotal').textContent=orders.length;$('allActive').textContent=active.length;$('allDone').textContent=done.length;$('allMoney').textContent=money(totalMoney);var mine=orders.filter(function(o){return o.driver===driver});var mDone=mine.filter(function(o){return o.status==='Жеткіздім'});var mActive=mine.filter(function(o){return o.status!=='Жеткіздім'&&o.status!=='Бас тартылды'});$('driverTotal').textContent=mine.length;$('driverActive').textContent=mActive.length;$('driverDone').textContent=mDone.length;$('driverMoney').textContent=money(mDone.reduce(function(s,o){return s+Number(o.fare||0)},0));$('lastOrdersHome').innerHTML=orders.length?orders.slice(-3).reverse().map(function(o){return '<div style="padding:8px 0;border-bottom:1px solid #BFE6FF"><b>№'+o.id.slice(-6)+'</b> '+esc(o.from)+' → '+esc(o.to)+' <span class="badge '+statusClass(o.status)+'">'+o.status+'</span></div>'}).join(''):'<div class="empty">Жоқ</div>';var vis=orders.filter(function(o){if(filter==='new')return !o.driver;if(filter==='mine')return o.driver===driver&&o.status!=='Жеткіздім';if(filter==='done')return o.driver===driver&&o.status==='Жеткіздім';return !o.driver||o.driver===driver});$('driverOrders').innerHTML=vis.length?vis.slice().reverse().map(function(o){return orderHTML(o,driver)}).join(''):'<div class="empty">Жоқ</div>';$('myOrders').innerHTML=orders.length?orders.slice().reverse().slice(0,5).map(function(o){return orderHTMLPassenger(o)}).join(''):'<div class="empty">Жоқ</div>';var all=orders.slice().reverse();if(q)all=all.filter(function(o){return (o.from+' '+o.to+' '+o.phone+' '+o.id).toLowerCase().indexOf(q)>-1});$('allOrders').innerHTML=all.length?all.map(function(o){return orderHTML(o,driver,true)}).join(''):'<div class="empty">Жоқ</div>'}
+function exportOrders(){var o=getOrders();if(!o.length){toast('Жоқ');return}var t=o.map(function(x){return buildWa(x)}).join('\n\n---\n\n');if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){toast('Көшірілді')})}
+function clearDone(){if(!confirm('Тазалаймыз ба?'))return;saveOrders(getOrders().filter(function(o){return o.status!=='Жеткіздім'}));render();toast('Тазаланды')}
+$('bookingForm').addEventListener('submit',function(e){e.preventDefault();var o={id:Date.now().toString(),from:$('from').value.trim(),to:$('to').value.trim(),date:$('date').value,time:$('time').value,passengers:$('passengers').value,tariff:$('tariff').value.trim()||'Стандарт',payment:$('payment').value,phone:$('phone').value.trim(),fare:Number($('fare').value)||0,comment:$('comment').value.trim(),driver:null,status:'Жаңа',created:new Date().toISOString()};var orders=getOrders();orders.push(o);saveOrders(orders);e.target.reset();setDefaultDate();render();openWa(DISPATCHER,buildWa(o));$('trackInput').value=o.id.slice(-6);go('track');setTimeout(trackOrder,200);toast('Қабылданды! №'+o.id.slice(-6))});
+function setDefaultDate(){var n=new Date();var d=new Date(n.getTime()-n.getTimezoneOffset()*60000);$('date').min=d.toISOString().slice(0,10);$('date').value=d.toISOString().slice(0,10);$('time').value=String(n.getHours()).padStart(2,'0')+':'+String(n.getMinutes()).padStart(2,'0')}
+document.addEventListener('click',function(e){var b=e.target.closest('[data-action]');if(!b)return;var a=b.dataset.action,id=b.dataset.id,driver=$('driverSelect').value,orders=getOrders(),o=orders.find(function(x){return x.id===id});if(!o)return;if(a==='accept'){if(o.driver){toast('Қабылданған');return}o.driver=driver;o.status='Қабылданды';toast('Қабылдадыңыз');}if(a==='next'){if(o.driver!==driver){toast('Сіздікі емес');return}var st=['Қабылданды','Жолға шықтым','Келдім','Алып кеттім','Жеткіздім'];var idx=st.indexOf(o.status);if(idx>=0&&idx<4){o.status=st[idx+1];toast(o.status)}}if(a==='cancel'){if(o.driver!==driver){toast('Сіздікі емес');return}if(!confirm('Бас тартасыз ба?'))return;o.driver=null;o.status='Жаңа';toast('Бас тартылды');}if(a==='delete'){if(!confirm('Өшіресіз бе?'))return;saveOrders(orders.filter(function(x){return x.id!==id}));render();toast('Өшірілді');return}if(a==='copy'){if(navigator.clipboard)navigator.clipboard.writeText(buildWa(o)).then(function(){toast('Көшірілді')});return}if(a==='wa'){openWa(DISPATCHER,buildWa(o));return}saveOrders(orders);render();if($('trackInput').value)trackOrder()});
+$('driverSelect').addEventListener('change',function(){filter='all';document.querySelectorAll('.tabs button').forEach(function(b){b.classList.toggle('active',b.dataset.filter==='all')});render()});
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){filter=b.dataset.filter;document.querySelectorAll('.tabs button').forEach(function(x){x.classList.toggle('active',x===b)});render()})});
+$('dispPhoneText').textContent=DISPLAY_PHONE;$('dispPhoneHome').textContent=DISPLAY_PHONE;updateDriverUI();setDefaultDate();render();
+</script>
+</body>
+</html>
