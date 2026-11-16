@@ -47,8 +47,7 @@ select option{background:#fff;color:#111}
 .track{border:2px solid #00A8E8;border-radius:8px;padding:14px;background:#E8F7FF}
 .track-steps{display:flex;gap:5px;margin:12px 0;flex-wrap:wrap}.track-steps div{flex:1;min-width:60px;text-align:center;font-size:11px;font-weight:700;padding:9px 3px;border-radius:6px;background:#F0F0F0;color:#888;box-shadow:0 3px 0 #DDD}.track-steps div.done{background:#00A8E8;color:#fff}.track-steps div.now{background:#25F4EE;color:#000}
 .page{display:none}.page.show{display:block}
-.toast{position:fixed;bottom:90px;left:50%;transform:translate(-50%,80px);background:#111;color:#fff;padding:12px 18px;border-radius:8px;transition:.3s;z-index:60;font-weight:800}.toast.show{transform:translate(-50%,0)}
-/* ПАРОЛЬ ТЕРЕЗЕСІ */
+.toast{position:fixed;top:70px;left:50%;transform:translate(-50%,-20px);background:#111;color:#fff;padding:10px 16px;border-radius:8px;transition:.3s;z-index:200;font-weight:800;pointer-events:none;opacity:0;white-space:nowrap;max-width:92%;overflow:hidden;text-overflow:ellipsis}.toast.show{transform:translate(-50%,0);opacity:1}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
 .modal.show{display:flex}
 .modal-box{background:#fff;width:100%;max-width:360px;border-radius:12px;padding:20px;box-shadow:0 10px 0 #0090C8}
@@ -113,7 +112,6 @@ select option{background:#fff;color:#111}
 <button id="adminNavBtn" data-nav="admin" onclick="go('admin',this)" style="display:none"><i>📋</i>Барлығы</button>
 </div>
 
-<!-- ПАРОЛЬ ТЕРЕЗЕСІ -->
 <div class="modal" id="passModal"><div class="modal-box">
 <h3 style="margin:0 0 12px">🚘 Жүргізуші кіру</h3>
 <div class="field"><label>Пароль</label><input id="passInput" type="password" inputmode="numeric" placeholder="Парольді енгізіңіз" autocomplete="off"></div>
@@ -131,7 +129,6 @@ var DISPATCHER="77082418836";
 var DISPLAY_PHONE="+7 708 241 88 36";
 var DRIVER_PASS="1234";
 var filter='all';
-
 function isDriverMode(){ try{return localStorage.getItem('akzhol_driver_mode')==='1'}catch(e){return false} }
 function updateDriverUI(){
   var on=isDriverMode();
@@ -155,16 +152,14 @@ function checkPass(){
   }
 }
 function logoutDriver(){ try{localStorage.removeItem('akzhol_driver_mode')}catch(e){} updateDriverUI(); go('home'); toast('Жүргізушіден шықтыңыз'); }
-
 $('driverLink').addEventListener('click', openPass);
 $('passInput').addEventListener('keydown', function(e){ if(e.key==='Enter'){ checkPass(); } });
 $('passModal').addEventListener('click', function(e){ if(e.target===$('passModal')) closePass(); });
-
 function getOrders(){try{return JSON.parse(localStorage.getItem(KEY)||'[]')}catch(e){return[]}}
 function saveOrders(d){localStorage.setItem(KEY,JSON.stringify(d))}
 function esc(v){return String(v==null?'':v).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
 function money(v){return Number(v||0).toLocaleString('kk-KZ')+' ₸'}
-function toast(m){var t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(function(){t.classList.remove('show')},2500)}
+function toast(m){var t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.timer);toast.timer=setTimeout(function(){t.classList.remove('show')},1800)}
 function statusClass(s){if(s==='Жеткіздім')return 'green';if(s==='Жаңа')return 'orange';if(s==='Бас тартылды')return 'red';return 'blue'}
 function callDriver(p){window.location.href="tel:+"+p}
 function openWa(p,msg){window.open("https://wa.me/"+p+"?text="+encodeURIComponent(msg||"Сәлеметсіз бе!"),"_blank")}
